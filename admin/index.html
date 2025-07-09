@@ -1,0 +1,21 @@
+<?php include '../includes/auth.php'; ?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4">
+  <h1 class="text-2xl mb-4">Dashboard</h1>
+  <div id="stats" class="grid grid-cols-3 gap-4 mb-4"></div>
+  <table class="min-w-full border">
+    <thead><tr><th class="border px-2">Folio</th><th class="border px-2">Type</th><th class="border px-2">Status</th></tr></thead>
+    <tbody id="reports"></tbody>
+  </table>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
